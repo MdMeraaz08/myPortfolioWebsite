@@ -5,12 +5,12 @@
   --header-height: 3rem;
   --font-semi: 600;
   /*===== Colores =====*/
-  /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
+  
   /* HSL color mode */
   --hue-color: 224;
-  --first-color:#4186e8;
+  --first-color:#b3d7e8;
  /* --first-color: hsl(var(--hue-color), 89%, 60%);*/
-  --second-color: hsl(var(--hue-color), 56%, 12%);
+  --second-color: #0d2f3e;
   /*===== Fuente y tipografia =====*/
   --body-font: 'Poppins', sans-serif;
   --big-font-size: 2rem;
@@ -335,19 +335,19 @@ img {
 }
 
 .skills__html {
-  width: 95%;
+  width: 71%;
 }
 
 .skills__css {
-  width: 85%;
+  width: 55%;
 }
 
 .skills__js {
-  width: 65%;
+  width: 75%;
 }
 
 .skills__ux {
-  width: 85%;
+  width: 45%;
 }
 
 .skills__img {
