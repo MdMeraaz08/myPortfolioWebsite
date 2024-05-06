@@ -152,6 +152,11 @@ img {
   position: relative;
 }
 
+.work__img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
 .nav__link:hover::after {
   position: absolute;
   content: '';
