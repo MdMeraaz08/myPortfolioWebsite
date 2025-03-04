@@ -1,298 +1,554 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="portfoliyo.css" />
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <!-- =====BOX ICONS===== -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
-      rel="stylesheet"
+  <title>Meraaz's Portfolio  - Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-    />
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-    <title>Mohd Meraaz Portfolio</title>
-  </head>
-  <body>
-    <!--===== HEADER =====-->
-    <header class="l-header">
-      <nav class="nav bd-grid">
-        <div>
-          <a href="#" class="nav__logo"> ♛ M E R A A Z ♛</a>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Mohd Meraaz</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://www.facebook.com/meraaz.mohammad.9/" class="facebook" target="_blank"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com/mohdmeraaz08/" class="instagram" target="_blank"><i class="bx bxl-instagram"></i></a>
+          <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
+          <a href="https://www.linkedin.com/in/mohdmeraaz08" class="linkedin" target="_blank"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://x.com/MohdMeraaz08" class="twitter" target="_blank"><i class="bx bxl-twitter"></i></a>
         </div>
-
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link ">Home</a>
-            </li>
-            
-            <li class="nav__item">
-              <a href="#skills" class="nav__link">Skills</a>
-            </li>
-            <li class="nav__item">
-              <a href="#Achievments" class="nav__link">Certificates</a>
-            </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link">About</a>
-            </li>
-            <!-- <li class="nav__item">
-              <a href="#contact" class="nav__link">Contact</a>
-            </li> -->
-            <!-- <li class="nav__item">
-              <a href="tobeaddded" class="nav__link active">Resume</a>
-            </li> -->
-          </ul>
-        </div>
-
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="bx bx-menu"></i>
-        </div>
-      </nav>
-    </header>
-    <br />
-
-    <main class="l-main">
-      <!--===== HOME =====-->
-      <section class="home bd-grid" id="home">
-        <div class="home__data">
-          <h1 class="home__title">
-            Hey,<br />
-            I'am <span class="home__title-color"> MERAAAZ</span><br />
-            Persuing Software <br />
-            Engineering
-          </h1>
-
-          <!-- <a href="#" class="button">Contact</a> -->
-        </div>
-
-        <div class="home__social">
-          <a
-            href="https://www.linkedin.com/in/mohdmeraaz08/"
-            class="home__social-icon"
-            target="_blank"
-            ><i class="bx bxl-linkedin"></i
-          ></a>
-          <a
-            href="https://www.instagram.com/mohdmeraaz08/"
-            class="home__social-icon"
-            target="_blank"
-            ><i class="bx bxl-instagram"></i
-          ></a>
-          <a href="https://github.com/MdMeraaz08" 
-          class="home__social-icon"
-          target="_blank"
-            ><i class="bx bxl-github"></i
-          ></a>
-        </div>
-
-        <div class="home__img">
-          <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <mask id="mask0" mask-type="alpha">
-                  <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-              </mask>
-              <g mask="url(#mask0)">
-                  <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
-                  <!-- <image class="home__blob-img" x="50" y="60" href="myIMG.png"/> -->
-                  <image class="home__blob-img" x="80" y="55" href="myIMG.png" style="width: 400px;height: 408px;"></image>
-              </g>
-          </svg>
       </div>
 
-        <!-- <div class="home__img">
-          <svg
-            class="home__blob"
-            viewBox="0 0 479 467"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-          >
-            <mask id="mask0" mask-type="alpha">
-              <path
-                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
-              />
-            </mask>
-            <g mask="url(#mask0)">
-              <path
-                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"
-              />
-              <image class="home__blob-img" x="50" y="60" href="#######" />
-            </g>
-          </svg>
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Certification</span></a></li>
+          <!-- <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li> -->
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Mohd Meraaz</h1>
+      <p>I'm <span class="typed" data-typed-items="Developer, Freelancer, Photographer"></span></p>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p>I'm Mohd Meraaz, a third-year engineering student passionate about Android App development and Cyber Security. With a keen interest in uncovering data insights and building innovative solutions.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Android Developer</h3>
+            <p class="fst-italic">
+               Android  Developer pursuing Bachelor's of Technology in Computer Science with specializaion in Artificial Intelligence and Machine Learning.
+              Proficient in Kotlin, JetpackCompose and Python, dedicated to user-centered solutions & project deadlines.
+            </p>
+            <br>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>08 September 2004</span></li>
+                  
+                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 </span></li> -->
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>21</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Chhindwara M.P.</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>BTech - CSE (AIML) </span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>meraaz0809@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li> -->
+                </ul>
+              </div>
+            </div>
+            <p>
+              I dive into the world of Android_Development. Simultaneously, I enjoy crafting elegant code and developing software solutions.
+               Join me as I showcase my projects and demonstrate how I'm merging my love for Android Development to create impactful solutions that shape the future.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+  
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+          <p>Motivated Computer Science Engineering student with a focus on Android development. 
+            Skilled in Python, Kotlin and android development. 
+            Committed to delivering high-quality solutions and meeting project deadlines.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Summary</h3>
+            <div class="resume-item pb-0">
+              <h4>Mohd Meraaz</h4>
+              <p><em>Aspiring Developer with expertise in Python, Kotlin, and C++. Pursuing a Bachelor's of Technology in Computer Science, specializing in Artificial Intelligence and Machine Learning. Committed to delivering innovative solutions and meeting project deadlines.</em></p>
+              <ul>
+                <li>Iklehra, Chhindwara (M.P.) , 480449</li>
+                <!-- <li>+91 8989246692</li> -->
+                <li>meraaz0809@gmail.com</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Bachelor of Technology</h4>
+              <h5>2022 - 2026</h5>
+              <p><em>Technocrats Institute of Technology, Bhopal</em></p>
+              <p>Pursuing Bachelor of Technology in Computer Science Engineering, specializing in Artificial Intelligence and Machine Learning. 
+          </p>
+            </div>
+            <div class="resume-item">
+              <h4> Senior secondary</h4>
+              <h5>2010 - 2021</h5>
+              <p><em>Kendriya Vidhyalaya Barkuhi</em></p>
+              <p>Completed higher secondary school education specializing in Mathematics and Computer Science 
+                from Kendriya Vidyalaya Barkuhi in 2021.</p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Freelancing</h4>
+              <h5>2023 - Present</h5>
+              <p><em>Bhopal, Madhya Pradesh </em></p>
+              <ul>
+                <li>
+                  <!-- Developed and designed interactive websites using HTML and CSS, demonstrating proficiency in front-end web development. -->
+                </li>
+                <li>
+                  Successfully collaborated with clients to understand project requirements and deliver tailored solutions, showcasing strong communication and client management skills.
+                </li>
+                <li>
+                  Received positive feedback from clients for delivering high-quality work within specified deadlines, establishing a reputation for reliability and professionalism in freelancing endeavors.
+                </li>
+
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>
+                Android Developer Intern
+              </h4>
+              <h5>June 2024 - July 2024</h5>
+              <p><em>CodSoft, Kolkata,West Bengal  </em></p>
+              <ul>
+                <li>
+                  Developed multiple Android applications using Kotlin and xml, focusing on diverse functionalities including task management, daily quotes, and alarm clock features..
+                </li>
+                <li>
+                  implemented key features such as task prioritization, due dates, local data storage, automatic quote refreshing, social sharing, alarm setting, custom tones, and snooze/dismiss options.
+                </li>
+                <li>
+                  Designed intuitive and user-friendly interfaces to enhance usability and user experience.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Certification Section ======= -->
+    <!-- NOTE:- portfolio keyword is for certifications -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Certification</h2>
+          <p>
+            Accomplished certifications in Java, Python, SQL , Machine Learning & Data Analytics, alongside successful participation and award-winning performances at various events.
+          </p>
+         
+        </div>
+
+        <!-- <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">Certification</li>
+              <li data-filter=".filter-card">Courses</li>
+              <li data-filter=".filter-web">Participation</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div> 
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
         </div> -->
-      </section>
-      <br />
-      
-      <!--===== SKILLS =====-->
-      <section class="skills section" id="skills">
-        <h2 class="section-title">Skills</h2>
 
-        <div class="skills__container bd-grid">
-          <div>
-            <h2 class="skills__subtitle">Technical skills</h2>
-            <p class="skills__text">
-              As a second-year engineering student, I've cultivated proficiency in Python, C++, Java, Machine learning, and Data analysis. I specialize in writing efficient and scalable code for diverse applications. My expertise includes leveraging algorithms and statistical techniques to extract insights from large datasets. Passionate about tackling complex problems and contributing to innovative projects.
-            </p>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx bxl-html5 skills__icon"></i>
-                <span class="skills__name">Python</span>
-              </div>
-              <div class="skills__bar skills__html"></div>
-              <div>
-                <span class="skills__percentage"></span>
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx bxl-css3 skills__icon"></i>
-                <span class="skills__name">ML/Data Analysis</span>
-              </div>
-              <div class="skills__bar skills__css"></div>
-              <div>
-                <span class="skills__percentage"></span>
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx bxl-javascript skills__icon"></i>
-                <span class="skills__name">C++</span>
-              </div>
-              <div class="skills__bar skills__js"></div>
-              <div>
-                <span class="skills__percentage"></span>
-              </div>
-            </div>
-            <div class="skills__data">
-              <div class="skills__names">
-                <i class="bx bxs-paint skills__icon"></i>
-                <span class="skills__name">Android development</span>
-              </div>
-              <div class="skills__bar skills__ux"></div>
-              <div>
-                <span class="skills__percentage"></span>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <img src="" alt="" class="skills__img" />
-          </div>
-        </div>
-      </section>
-      <br />
-
-
-      <!--===== Achievments =====-->
-      <section class="work section" id="Achievments">
-        <h2 class="section-title">Certificates</h2>
-
-        <div class="work__container bd-grid">
-
-          <a href="ml_gfg_page-0001.jpg" 
-            target="_blank"
-             class="work__img">
-            <img src="ml_gfg_page-0001.jpg" alt="" />
-          </a>
-
-          <a href="java_basic_certificate_page-0001.jpg"
-          target="_blank"
-           class="work__img">
-            <img src="java_basic_certificate_page-0001.jpg" alt="" />
-          </a>
-
-          <a href="python_basic_certificate_page-0001.jpg" 
-          target="_blank"
-          class="work__img">
-            <img src="python_basic_certificate_page-0001.jpg" alt="" />
-          </a>
-
-          <a href="sql_basic_certificate_page-0001.jpg"
-          target="_blank"
-           class="work__img">
-            <img src="sql_basic_certificate_page-0001.jpg" alt="" />
-          </a>
-
-          <a href="InovationDay.jpg" 
-          target="_blank"
-          class="work__img">
-            <img src="InovationDay.jpg" alt="" />
-          </a>
-
-          <a href="CodeClanCertificate.png" 
-          target="_blank"
-          class="work__img">
-            <img src="CodeClanCertificate.png" alt="" />
-          </a>
-          <!-- Add certificates here -->
-          
-        </div>
-      </section>
-      <br />
-      <!--===== ABOUT =====-->
-      <section class="about section" id="about">
-        <h2 class="section-title">About</h2>
-
-        <div class="about__container bd-grid">
-          <div class="about__img">
-            <img src="IMG20230821173732.jpg" alt="here is image" />
-          </div>
-
-          <div>
-            <h2 class="about__subtitle">Welcome!</h2>
-            <p class="about__text">
-               I'm Mohd Meraaz, a second-year engineering student passionate about Android App development and Machine Learning.
-              With a keen interest in uncovering data insights and building innovative solutions, I dive into the world of machine learning. Simultaneously, I enjoy crafting elegant code and developing software solutions.
-              Join me as I showcase my projects and demonstrate how I'm merging my love for machine learning and development to create impactful solutions that shape the future.
-            </p>
-          </div>
-        </div>
-      </section>
-      <br />
-      <!-- ===== CONTACT =====
-      <section class="contact section" id="contact">
-        <h2 class="section-title">Contact</h2>
-
-        <div class="contact__container bd-grid">
-          <form action="" class="contact__form">
-            <input type="text" placeholder="Name" class="contact__input" />
-            <input type="mail" placeholder="Email" class="contact__input" />
-            <textarea
-              name=""
-              id=""
-              cols="0"
-              rows="10"
-              class="contact__input"
-            ></textarea>
-            <input
-              type="button"
-              value="Submit"
-              class="contact__button button"
-            />
-          </form>
-        </div>
-      </section>
-    </main>
-    <br /> -->
-    <!--===== FOOTER =====-->
-    <footer class="footer">
-      <p class="footer__title">MOHD MERAAZ</p>
-      <div class="footer__social">
-        <!-- <a href="https://wa.me/qr/Q7OQ4HNGFTQ2I1" class="footer__icon"><i class='bx bxl-whatsapp' ></i></a> -->
-        <a href="https://www.instagram.com/mohdmeraaz08/" class="footer__icon"
-          ><i class="bx bxl-instagram"></i
-        ></a>
-        <a href="https://twitter.com/MohdMeraaz08" class="footer__icon"><i class="bx bxl-twitter"></i></a>
       </div>
-      <p class="footer__copy">&#169; All rigths reserved</p>
-      <!-- <p class="footer_contact"> contact ~  </p> -->
-    </footer>
+    </section><!-- End Portfolio Section -->
 
-    <!--===== SCROLL REVEAL =====-->
-    <script src="https://unpkg.com/scrollreveal"></script>
+    
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
 
-    <!--===== MAIN JS =====-->
-    <script src="assets/js/main.js"></script>
-  </body>
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>Proficient in Python , C++ and Kotlin, with experience in Android Development. Familiar with Cyber-Security concepts and strong problem-solving skills. Effective team collaborator with excellent communication abilities.</p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">C++ <i class="val"></i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Kotlin<i class="val"></i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">JetpackCompose <i class="val"></i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="progress">
+              <span class="skill">Python <i class="val"></i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Photoshop | Final Cut Pro <i class="val"></i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill"> Databases <i class="val"></i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+
+    <!-- comment
+     ======= Services Section ======= 
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+            <div class="icon"><i class="bi bi-briefcase"></i></div>
+            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><i class="bi bi-card-checklist"></i></div>
+            <h4 class="title"><a href="">Dolor Sitema</a></h4>
+            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon"><i class="bi bi-bar-chart"></i></div>
+            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon"><i class="bi bi-binoculars"></i></div>
+            <h4 class="title"><a href="">Magni Dolores</a></h4>
+            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon"><i class="bi bi-brightness-high"></i></div>
+            <h4 class="title"><a href="">Nemo Enim</a></h4>
+            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+          </div>
+        </div>
+
+      </div>
+    </section> -->
+    <!-- End Services Section -->
+
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Contact form is not working as of now, I am working on it.</p>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>House No.462 Ward No 14 Shiva Nagar No4. Iklehra Chhindwara Madhya Pradesh , 480449</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>meraaz0809@gmail.com</p>
+              </div>
+
+              <!-- <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+91 8989246692</p>
+              </div> -->
+              
+              <iframe src= "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12997.971480790306!2d78.68494393293945!3d22.199096638867477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd57fd116cb32db%3A0xd7283fd4a32b45f5!2sMohd%20Meraaz&#39;s%20House!5e0!3m2!1sen!2sin!4v1715185493919!5m2!1sen!2sin" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Portfolio</span></strong>
+      </div>
+      <div class="credits">
+
+        Designed by <a href="">Mohd Meraaz</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
