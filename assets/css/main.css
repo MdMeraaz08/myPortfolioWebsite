@@ -1146,6 +1146,24 @@ section,
 .contact .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 25%);
 }
+/* added by meraaz */
+.btn-send-message {
+  background-color: #0563bb;      
+  color: #ffffff;                 /* White text */
+  border: 2px solid #91c1f6;      /* Matching border */
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+.btn-send-message:hover {
+  background-color: #0056b3;      /* Darker blue on hover */
+  border-color: #0056b3;
+}
 
 /*--------------------------------------------------------------
 # Portfolio Details Section
