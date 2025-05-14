@@ -6,7 +6,7 @@ Welcome to my personal portfolio website! This site showcases my skills, project
 ## 🌐 Live Demo
 
 [Visit the Website](https://mdmeraaz08.github.io/myPortfolioWebsite/)  
-*(Update this link if hosted elsewhere)*
+
 
 ---
 
