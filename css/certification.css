@@ -1,0 +1,156 @@
+/* Certification Detail Page Styles */
+
+/* Certification Header */
+.certification-header {
+  background: var(--bg-light-alt);
+  padding: var(--spacing-md) 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+body.dark-mode .certification-header {
+  background: var(--bg-dark-alt);
+}
+
+/* Back Button */
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  margin-bottom: var(--spacing-md);
+  color: var(--primary-color);
+  font-weight: 600;
+  transition: transform var(--transition-fast);
+}
+
+.back-button:hover {
+  transform: translateX(-5px);
+}
+
+/* Certification Title */
+.certification-title {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Certification Meta */
+.certification-meta {
+  display: flex;
+  gap: var(--spacing-xl);
+  flex-wrap: wrap;
+  margin-bottom: var(--spacing-lg);
+  padding: var(--spacing-md);
+  background: var(--bg-light-alt);
+  border-radius: var(--border-radius-lg);
+}
+
+body.dark-mode .certification-meta {
+  background: var(--bg-dark-alt);
+}
+
+.meta-item {
+  flex: 1;
+  min-width: 200px;
+}
+
+.meta-item h4 {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-xs);
+}
+
+/* Certification Image */
+.certification-image {
+  margin-bottom: var(--spacing-xl);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: 0 10px 30px var(--shadow-color);
+}
+
+.certification-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Certification Content */
+.certification-content {
+  margin-bottom: var(--spacing-xxl);
+}
+
+.course-description, 
+.skills-learned,
+.credential-verification {
+  margin-bottom: var(--spacing-xl);
+}
+
+.certification-content h2 {
+  font-size: 2rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--primary-color);
+}
+
+/* Skills Learned */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+}
+
+.skill-tag {
+  padding: 8px 16px;
+  background: var(--bg-light-alt);
+  border-radius: var(--border-radius-md);
+  font-weight: 600;
+  transition: all var(--transition-fast);
+}
+
+body.dark-mode .skill-tag {
+  background: var(--bg-dark-alt);
+}
+
+.skill-tag:hover {
+  background: var(--primary-color);
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* Credential Verification */
+.verify-credential {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-md);
+  background: var(--bg-light-alt);
+  border-radius: var(--border-radius-md);
+  font-weight: 600;
+  color: var(--primary-color);
+  box-shadow: 0 5px 15px var(--shadow-color);
+  transition: all var(--transition-fast);
+}
+
+body.dark-mode .verify-credential {
+  background: var(--bg-dark-alt);
+}
+
+.verify-credential:hover {
+  background: var(--primary-color);
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .certification-title {
+    font-size: 2rem;
+  }
+  
+  .certification-content h2 {
+    font-size: 1.75rem;
+  }
+  
+  .certification-meta {
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+}
