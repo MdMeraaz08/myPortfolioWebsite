@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DSA - Toolkit | Mohd Meraaz</title>
+  <title>Contact Management System | Mohd Meraaz</title>
+
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="../css/project.css">
+  <link rel="stylesheet" href="../css/modal.css">
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -44,10 +46,11 @@
         <i class="fas fa-arrow-left"></i> Back to Projects
       </a>
       
-     <h1 class="project-title">DSA Toolkit (C++ Terminal App)</h1>
+     <h1 class="project-title">Contact Management System (C++ Command-Line App)</h1>
+
 
       
-      <div class="project-meta">
+   <div class="project-meta">
   <div class="meta-item">
     <h4>Role</h4>
     <p>Solo Developer</p>
@@ -58,101 +61,101 @@
   </div>
   <div class="meta-item">
     <h4>Technologies</h4>
-    <p>C++, File Handling, Custom Algorithms (No STL)</p>
+    <p>C++, File I/O, Exception Handling, Input Validation</p>
   </div>
 </div>
 
+
       
       <div class="project-banner">
-        <img src="images/DSA-Toolkit/stack.jpg" alt="E-commerce Website Banner">
+        <img src="images/ContactManagementSystem/contactmgmtBanner.jpg" alt="E-commerce Website Banner">
       </div>
       
       <div class="project-content">
         <div class="project-overview">
   <h2>Project Overview</h2>
-  <p>
-    The DSA Toolkit is a terminal-based C++ application designed to help students and professionals practice and understand core Data Structures and Algorithms (DSA). It features multiple switch-case driven operations on arrays, stacks, queues, and linked lists — including sorting algorithms, undo functionality using stacks, and display options. The project avoids using STL to strengthen fundamental C++ programming skills and promote manual implementation of DSA concepts.
-  </p>
+<p>
+  The Contact Management System is a C++ command-line application designed to efficiently manage personal or professional contacts. It supports adding new contacts with phone number validation, searching by name, displaying help instructions, and exiting the application gracefully. Robust exception handling ensures smooth operation during file I/O and input validation, enhancing the reliability and user experience.
+</p>
+
 </div>
 
-        
         <div class="project-challenges">
   <h2>Challenges & Solutions</h2>
 
   <div class="challenge-item">
-    <h3>Designing a Versatile Switch-Case System</h3>
+    <h3>Input Validation for Phone Numbers</h3>
     <p>
-      Creating a modular and intuitive switch-case menu to handle different data structures and operations was challenging. I solved this by designing separate functions for each operation and ensuring consistent user interaction through clear prompts and control flow logic.
+      Ensuring that users entered valid phone numbers was essential to maintain data integrity. I implemented custom validation logic using string operations and conditions to filter out invalid inputs before storing them.
     </p>
   </div>
 
   <div class="challenge-item">
-    <h3>Manual Implementation Without STL</h3>
+    <h3>Handling File I/O Safely</h3>
     <p>
-      Avoiding the use of Standard Template Library (STL) added complexity in terms of memory management and data structure behavior. I tackled this by implementing all structures (like stacks, queues, and linked lists) from scratch using pointers and arrays to reinforce low-level understanding.
+      Reading from and writing to files introduced the risk of crashes due to missing or corrupt files. This was mitigated using exception handling and conditional checks to ensure the file operations were safe and reliable.
     </p>
   </div>
 
   <div class="challenge-item">
-    <h3>Implementing Undo Functionality</h3>
+    <h3>Graceful Application Exit</h3>
     <p>
-      Adding an undo feature required tracking user actions efficiently. I used a stack-based approach to store previous states or actions, allowing reversal when required. This strengthened the practical usage of stacks in real-world applications.
+      Making sure the application exits without leaving processes hanging or files open was tricky. I ensured proper closing of file streams and included exit prompts for a smooth shutdown.
     </p>
   </div>
 </div>
 
-        <div class="project-gallery">
+
+     
+        <!-- start image gallery-->
+
+<div class="project-gallery">
     <h2>Project Gallery</h2>
     <div class="gallery-grid">
         <div class="gallery-item">
-            <img src="images/DSA-Toolkit/array.jpg" alt="Array Operations" onclick="openModal(); currentSlide(1)">
+            <img src="images/ContactManagementSystem/add.jpg" alt="Add Operations" onclick="openModal(); currentSlide(1)">
 
         </div>
         <div class="gallery-item">
-            <img src="images/DSA-Toolkit/linkedList.jpg" alt="Linked List Operations" onclick="openModal(); currentSlide(2)">
+            <img src="images/ContactManagementSystem/Help.jpeg" alt="Help Operations" onclick="openModal(); currentSlide(2)">
 
         </div>
         <div class="gallery-item">
-            <img src="images/DSA-Toolkit/queue.jpg" alt="Queue Operations" onclick="openModal(); currentSlide(3)">
-
-        </div>
-        <div class="gallery-item">
-            <img src="images/DSA-Toolkit/array.jpg" alt="Array Operations" onclick="openModal(); currentSlide(1)">
-
-        </div>
-        <div class="gallery-item">
-            <img src="images/DSA-Toolkit/linkedList.jpg" alt="Linked List Operations" onclick="openModal(); currentSlide(2)">
-
-        </div>
-        <div class="gallery-item">
-            <img src="images/DSA-Toolkit/queue.jpg" alt="Queue Operations" onclick="openModal(); currentSlide(3)">
+            <img src="images/ContactManagementSystem/Search.jpg" alt="Search Operations" onclick="openModal(); currentSlide(3)">
 
         </div>
     </div>
 </div>
 
 <!-- Modal for the gallery -->
-
 <div id="myModal" class="modal">
     <span class="close" onclick="closeModal()">&times;</span>
     <div class="modal-content">
         <div class="mySlides">
-            <img src="images/DSA-Toolkit/array.jpg" style="width:100%">
+            <img src="images/ContactManagementSystem/add.jpg" style="width:100%">
         </div>
         <div class="mySlides">
-            <img src="images/DSA-Toolkit/linkedList.jpg" style="width:100%">
+            <img src="images/ContactManagementSystem/Help.jpeg" style="width:100%">
         </div>
         <div class="mySlides">
-            <img src="images/DSA-Toolkit/queue.jpg" style="width:100%">
+            <img src="images/ContactManagementSystem/Search.jpg" style="width:100%">
         </div>
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
 </div>
 
+
+
         
+
+<!--end image gallery--> 
+
+
+
+
         <div class="project-links">
-          <a href="https://github.com/MdMeraaz08/DSA-Toolkit-C-.git" target="_blank" class="btn primary">
+          <a href="https://github.com/MdMeraaz08/Contact-Management-System-C-.git" target="_blank" class="btn primary">
             <i class="fab fa-github"></i> View on GitHub
           </a>
           <!-- <a href="https://ecommerce-demo.example.com" target="_blank" class="btn secondary">
@@ -210,6 +213,5 @@
   <!-- JavaScript -->
   <script src="../js/main.js"></script>
   <script src="../js/project.js"></script>
-  
 </body>
 </html>
