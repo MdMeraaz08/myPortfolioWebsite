@@ -3,11 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hospital Management System | Mohd Meraaz</title>
+  <title>Inventory Management System | Mohd Meraaz</title>
 
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="../css/project.css">
-  <link rel="stylesheet" href="../css/modal.css">
   <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -46,118 +45,98 @@
         <i class="fas fa-arrow-left"></i> Back to Projects
       </a>
       
-     <h1 class="project-title">Hospital Management System - Care With Love</h1>
+     <h1 class="project-title">Inventory Management System (Python CLI App)</h1>
 
-
-      
-  <div class="project-meta"> 
-    <div class="meta-item">
-  <h4>Role</h4>
-  <p>Developer & Designer (Collaborative Project)</p>
-    </div>
-        <div class="meta-item">
-          <h4>Team Size</h4>
-          <p>2 Members</p>
-        </div>
-      
-        <div class="meta-item">
-         <h4>Timeline</h4> 
-         <p>April 2024</p> 
-        </div>
-         <div class="meta-item"> 
-          <h4>Technologies</h4> 
-          <p>Python, Tkinter, MySQL, Random Module</p> 
-        </div> 
-      </div>
-
+<div class="project-meta">
+  <div class="meta-item">
+    <h4>Role</h4>
+    <p>Solo Developer</p>
+  </div>
+  <div class="meta-item">
+    <h4>Timeline</h4>
+    <p>May 2025</p>
+  </div>
+  <div class="meta-item">
+    <h4>Technologies</h4>
+    <p>Python, JSON, File Handling, FPDF</p>
+  </div>
+</div>
 
       
       <div class="project-banner">
-        <img src="images/HospitalManagementSystem/hospital-banner.jpg" alt="E-commerce Website Banner">
+        <img src="images/inventorymgmt/banner.jpg" alt="inventory Website Banner">
       </div>
       
       <div class="project-content">
         <div class="project-overview">
   <h2>Project Overview</h2>
-<p>
-  The Hospital Management System is a Python GUI application built with Tkinter and MySQL backend to efficiently manage patient registrations, appointments, doctor listings, service availability, and patient data modifications. It provides an intuitive interface to schedule appointments with doctors, view hospital services, and update existing patient records, ensuring streamlined hospital operations and enhanced patient care.
+  <p>
+  The Inventory Management System is a command-line Python application designed to manage product inventory and handle billing operations. It supports multiple product purchases, real-time stock updates, automatic discount application on bills over ₹5000, and generates PDF receipts using the FPDF library. The system utilizes JSON for data storage and file handling for transaction logging.
 </p>
 
 </div>
 
-       <div class="project-challenges">
+        
+        <div class="project-challenges">
   <h2>Challenges & Solutions</h2>
+
   <div class="challenge-item">
-    <h3>Input Validation for User Data</h3>
-    <p>
-      Ensuring that users entered valid data for registration and appointments was essential for maintaining data integrity. I implemented custom validation logic to filter out invalid inputs, such as age and phone number formats, before storing them in the database.
-    </p>
-  </div>
-  <div class="challenge-item">
-    <h3>Database Connection Management</h3>
-    <p>
-      Managing connections to the MySQL database introduced risks of connection leaks and data inconsistency. This was mitigated by using proper connection handling and ensuring that connections were closed after operations were completed.
-    </p>
-  </div>
-  <div class="challenge-item">
-    <h3>Ensuring User-Friendly Interface</h3>
-    <p>
-      Creating an intuitive and user-friendly interface for the hospital management system was challenging. I focused on clear labeling, organized layouts, and informative prompts to enhance the user experience and facilitate easy navigation.
-    </p>
-  </div>
+  <h3>Handling Multiple Product Purchases</h3>
+  <p>
+    Designing a system to manage multiple product selections, update inventory accurately, and calculate billing with discounts required careful handling of user inputs and data structures.
+  </p>
 </div>
 
+<div class="challenge-item">
+  <h3>Implementing Discount Logic</h3>
+  <p>
+    Applying conditional discounts (10% for purchases above ₹5000) while maintaining correct billing and receipt generation involved precise calculations and validation.
+  </p>
+</div>
 
-     
-        <!-- start image gallery-->
+<div class="challenge-item">
+  <h3>Generating PDF Receipts</h3>
+  <p>
+    Automating the creation of professional PDF receipts using the FPDF library required learning and integrating third-party libraries for seamless user experience.
+  </p>
+</div>
 
-<div class="project-gallery">
+</div>
+
+        <div class="project-gallery">
     <h2>Project Gallery</h2>
     <div class="gallery-grid">
         <div class="gallery-item">
-            <img src="images/HospitalManagementSystem/hospital-img1.jpg" alt="Add Operations" onclick="openModal(); currentSlide(1)">
-
+           <img src="images/inventorymgmt/banner.jpg" alt="inventory Website Banner" onclick="openModal(); currentSlide(1)">
         </div>
         <div class="gallery-item">
-            <img src="images/HospitalManagementSystem/hospital-img2.jpg" alt="Help Operations" onclick="openModal(); currentSlide(2)">
-
+           <img src="images/inventorymgmt/recipt.jpg" alt="inventory Website Banner" onclick="openModal(); currentSlide(1)">
         </div>
-        <div class="gallery-item">
-            <img src="images/HospitalManagementSystem/hospital-img3.jpg" alt="Search Operations" onclick="openModal(); currentSlide(3)">
-
-        </div>
+       
     </div>
 </div>
 
 <!-- Modal for the gallery -->
+
 <div id="myModal" class="modal">
     <span class="close" onclick="closeModal()">&times;</span>
     <div class="modal-content">
         <div class="mySlides">
-             <img src="images/HospitalManagementSystem/hospital-img1.jpg"style="width:100%">
+          <img src="images/inventorymgmt/banner.jpg"  style="width:100%">
         </div>
         <div class="mySlides">
-             <img src="images/HospitalManagementSystem/hospital-img2.jpg" style="width:100%">
+          <img src="images/inventorymgmt/inventorymgmt/recipt.jpg"  style="width:100%">
         </div>
-        <div class="mySlides">
-             <img src="images/HospitalManagementSystem/hospital-img3.jpg" style="width:100%">
+
         </div>
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
 </div>
 
-
-
         
-
-<!--end image gallery--> 
-
-
-
-
         <div class="project-links">
-          <a href="https://github.com/MdMeraaz08/Hospital-Management-System.git" target="_blank" class="btn primary">
+          <a href="https://github.com/MdMeraaz08/inventoryManagementSystem.git" target="_blank" class="btn primary">
             <i class="fab fa-github"></i> View on GitHub
           </a>
           <!-- <a href="https://ecommerce-demo.example.com" target="_blank" class="btn secondary">
@@ -215,5 +194,6 @@
   <!-- JavaScript -->
   <script src="../js/main.js"></script>
   <script src="../js/project.js"></script>
+  
 </body>
 </html>
