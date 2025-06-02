@@ -61,9 +61,10 @@
         </div>
       </div>
       
-      <div class="certification-image">
-        <img src="images/csa.jpg" alt="ServiceNow Certified System Administrator Certificate">
-      </div>
+      <div class="certification-image-container">
+  <img id="certificateImage" src="images/csa.jpg" alt="ServiceNow Certified System Administrator Certificate">
+   <button id="nextCertificateBtn">Next</button>
+</div>
       
       <div class="certification-content">
         <div class="course-description">
@@ -156,7 +157,19 @@
     <i class="fas fa-arrow-up"></i>
   </button>
 
-  <!-- JavaScript -->
+ <!-- JavaScript -->
   <script src="../js/main.js"></script>
+  <script>
+  const certificates = [
+    "images/csa.jpg",
+    "images/servicenow-micro.jpg"
+  ];
+  let currentIndex = 0;
+
+  document.getElementById("nextCertificateBtn").addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % certificates.length;
+    document.getElementById("certificateImage").src = certificates[currentIndex];
+  });
+</script>
 </body>
 </html>

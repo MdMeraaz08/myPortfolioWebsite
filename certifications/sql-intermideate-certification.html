@@ -44,7 +44,8 @@
         <i class="fas fa-arrow-left"></i> Back to Certifications
       </a>
       
-      <h1 class="certification-title">Software Engineer – HackerRank Certified (Intermediate)</h1>
+      <h1 class="certification-title">Software Engineer – HackerRank Certified (Basics | Intermediate)</h1>
+
       
       <div class="certification-meta">
         <div class="meta-item">
@@ -61,17 +62,22 @@
         </div>
       </div>
       
-      <div class="certification-image">
-        <img src="images/certificate-sql_intermidiate.jpg" alt="Software Engineer Certificate">
-      </div>
+     <div class="certification-image-container">
+  <img id="certificateImage" src="images/certificate-sql_intermidiate.jpg" alt="SQL Intermediate Certificate">
+  <button id="nextCertificateBtn">Next</button>
+</div>
+
       
       <div class="certification-content">
         <div class="course-description">
           <h2>Overview</h2>
-          <p>
-            The HackerRank Software Engineer (Intermediate) certification demonstrates proficiency in problem solving and SQL. 
-            It validates the capability to design scalable backend systems and write efficient code to solve real-world problems.
-          </p>
+         <section class="certification-description">
+  <p>
+    The HackerRank Software Engineer (Basics | Intermediate) certification demonstrates proficiency in problem solving and SQL. 
+    It validates the capability to design scalable backend systems and write efficient code to solve real-world problems.
+  </p>
+</section>
+
         </div>
 
         <div class="skills-learned">
@@ -165,5 +171,18 @@
 
   <!-- JavaScript -->
   <script src="../js/main.js"></script>
+  <script>
+  const certificates = [
+    "images/certificate-sql_intermidiate.jpg",
+    "images/certificate-sql_basic.jpg"
+  ];
+  let currentIndex = 0;
+
+  document.getElementById("nextCertificateBtn").addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % certificates.length;
+    document.getElementById("certificateImage").src = certificates[currentIndex];
+  });
+</script>
+
 </body>
 </html>

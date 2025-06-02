@@ -154,3 +154,37 @@ body.dark-mode .verify-credential {
     gap: var(--spacing-md);
   }
 }
+
+
+/* ::view-transition-new */
+
+.certification-image-container {
+  position: relative;
+  text-align: center;
+  margin: 30px auto;
+  max-width: 800px;
+}
+
+.certification-image-container img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+}
+
+#nextCertificateBtn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 10px 20px;
+  background-color: #1f1f1f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+#nextCertificateBtn:hover {
+  background-color: #333;
+}
