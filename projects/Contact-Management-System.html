@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Management System - Mohd Meraaz</title>
+  <meta name="description" content="Terminal-based C++ Contact Management System using file handling and input validation.">
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="icons/favicon.svg" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <a href="../index.html">Mohd Meraaz</a>
+      </div>
+      <ul class="nav-menu" id="navMenu">
+        <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="../about.html" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="../index.html#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="../index.html#projects" class="nav-link active">Projects</a></li>
+        <li class="nav-item"><a href="../index.html#certifications" class="nav-link">Certifications</a></li>
+        <li class="nav-item"><a href="../index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="sun-icon">☀️</span>
+          <span class="moon-icon">🌙</span>
+        </button>
+        <div class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Project Header -->
+  <section class="project-header">
+    <div class="container">
+      <div class="project-header-content">
+        <div class="project-breadcrumb">
+          <a href="../index.html#projects">Projects</a> / <span>Contact Management System</span>
+        </div>
+        <h1 class="project-title">Contact Management System</h1>
+        <p class="project-subtitle">C++ terminal-based application for managing contacts</p>
+        <div class="project-meta">
+          <span class="project-type">Console Project</span>
+          <span class="project-duration">Timeline: May 2025</span>
+          <span class="project-status">Status: Completed</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Gallery -->
+  <section class="project-gallery">
+    <div class="container">
+      <h2>Project Screenshots</h2>
+      <div class="gallery-container">
+        <div class="main-image">
+          <img src="../images/projects/ContactManagementSystem/contactmgmtBanner.jpeg" alt="Terminal Preview" id="mainImg" />
+        </div>
+        <div class="thumbnail-nav">
+          <img src="../images/projects/ContactManagementSystem/add.jpeg" alt="Main Menu" class="thumb active" onclick="changeImage(this.src, this)" />
+          <img src="../images/projects/ContactManagementSystem/contactmgmtBanner.jpeg" alt="Add Contact" class="thumb" onclick="changeImage(this.src, this)" />
+          <img src="../images/projects/ContactManagementSystem/Help.jpeg" alt="Search Contact" class="thumb" onclick="changeImage(this.src, this)" />
+           <img src="../images/projects/ContactManagementSystem/Search.jpeg" alt="Search Contact" class="thumb" onclick="changeImage(this.src, this)" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Details -->
+  <section class="project-details">
+    <div class="container">
+      <div class="project-content">
+
+        <!-- Overview -->
+        <div class="project-section">
+          <h2>Project Overview</h2>
+          <p>
+            This is a C++ terminal-based application built to manage contact information effectively. It includes core functions like adding contacts, searching records, and displaying help—all implemented using file handling and input validation techniques.
+          </p>
+        </div>
+
+        <!-- Technologies Used -->
+        <div class="project-section">
+          <h2>Technologies Used</h2>
+          <div class="tech-stack">
+            <div class="tech-category">
+              <h3>Languages & Tools</h3>
+              <div class="tech-tags">
+                <span class="tech-tag">C++</span>
+                <span class="tech-tag">fstream</span>
+                <span class="tech-tag">Standard Library</span>
+                <span class="tech-tag">Input Validation</span>
+                <span class="tech-tag">Exception Handling</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Key Features -->
+        <div class="project-section">
+          <h2>Key Features</h2>
+          <div class="features-grid">
+            <div class="feature-item"><h3>➕ Add Contact</h3><p>Adds contact after validating name and 10-digit phone number.</p></div>
+            <div class="feature-item"><h3>🔍 Search Contact</h3><p>Search for contacts by full/partial name from file.</p></div>
+            <div class="feature-item"><h3>📘 Help Option</h3><p>Displays program instructions to the user.</p></div>
+            <div class="feature-item"><h3>❌ Exit</h3><p>Closes the application and safely ends execution.</p></div>
+          </div>
+        </div>
+
+        <!-- My Role -->
+        <div class="project-section">
+          <h2>My Role & Responsibilities</h2>
+          <ul class="responsibilities-list">
+            <li>Designed menu-driven logic using loops and switch-case</li>
+            <li>Implemented input sanitization and validation</li>
+            <li>Handled file operations for data persistence</li>
+            <li>Ensured smooth UX using clear console outputs</li>
+          </ul>
+        </div>
+
+        <!-- Challenges & Solutions -->
+        <div class="project-section">
+          <h2>Challenges & Solutions</h2>
+          <div class="challenge-item">
+            <h3>Challenge: Validating Phone Numbers</h3>
+            <p><strong>Solution:</strong> Implemented character-level checks to enforce 10-digit numeric input.</p>
+          </div>
+          <div class="challenge-item">
+            <h3>Challenge: File Read/Write Safety</h3>
+            <p><strong>Solution:</strong> Ensured proper opening/closing of files and handled missing file scenarios gracefully.</p>
+          </div>
+        </div>
+
+        <!-- Project Links -->
+        <div class="project-section">
+          <h2>Project Links</h2>
+          <div class="project-links">
+            <a href="https://github.com/MdMeraaz08/Contact-Management-System" target="_blank" class="btn btn-primary">
+              <img src="../icons/github.svg" alt="GitHub" /> View Source Code
+            </a>
+            <a href="../assets/Contact-Management-System.pdf" target="_blank" class="btn btn-outline">
+              <img src="../icons/document.svg" alt="Documentation" /> Documentation
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Mohd Meraaz</h3>
+          <p>Software Developer & Cybersecurity Enthusiast</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../index.html#projects">Projects</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Connect</h4>
+          <div class="social-links">
+            <a href="https://github.com/MdMeraaz08" target="_blank"><img src="../icons/github.svg" alt="GitHub" /></a>
+            <a href="https://www.linkedin.com/in/mohdmeraaz08" target="_blank"><img src="../icons/linkedin.svg" alt="LinkedIn" /></a>
+            <a href="https://x.com/MohdMeraaz08" target="_blank"><img src="../icons/twitter.svg" alt="Twitter" /></a>
+            <a href="mailto:meraaz0809@gmail.com"><img src="../icons/email.svg" alt="Email" /></a>
+            <a href="https://www.instagram.com/mohdmeraaz08/" target="_blank"><img src="../icons/instagram.svg" alt="Instagram" /></a>
+            <a href="https://buymeacoffee.com/mohdmeraaz" target="_blank"><img src="../icons/buymeacoffee.svg" alt="Buy Me a Coffee" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Mohd Meraaz. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><span>↑</span></button>
+
+  <!-- Scripts -->
+  <script src="../js/script.js"></script>
+  <script>
+    function changeImage(src, element) {
+      document.getElementById('mainImg').src = src.replace('w=200', 'w=800');
+      document.querySelectorAll('.thumb').forEach(thumb => thumb.classList.remove('active'));
+      element.classList.add('active');
+    }
+  </script>
+</body>
+</html>

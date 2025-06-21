@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Name - Mohd Meraaz</title>
+    <meta name="description" content="Full-stack e-commerce platform project details">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/svg+xml" href="icons/favicon.svg">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">Mohd Meraaz</a>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#projects" class="nav-link active">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#certifications" class="nav-link">Certifications</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <span class="sun-icon">☀️</span>
+                    <span class="moon-icon">🌙</span>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Header -->
+    <section class="project-header">
+        <div class="container">
+            <div class="project-header-content">
+                <div class="project-breadcrumb">
+                    <a href="../index.html#projects">Projects</a> / <span>E-commerce Website</span>
+                </div>
+                <h1 class="project-title">E-commerce Website</h1>
+                <p class="project-subtitle">Full-stack e-commerce platform with modern features</p>
+                <div class="project-meta">
+                    <span class="project-type">Development Project</span>
+                    <span class="project-duration">Duration: 3 months</span>
+                    <span class="project-status">Status: Completed</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Gallery -->
+    <section class="project-gallery">
+        <div class="container">
+            <h2>Project Screenshots</h2>
+            <div class="gallery-container">
+                <!-- Main Image Display -->
+                <div class="main-image">
+                    <img src="https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&w=800" alt="E-commerce Homepage" id="mainImg">
+                </div>
+                
+                <!-- Thumbnail Navigation -->
+                <div class="thumbnail-nav">
+                    <img src="https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Homepage" class="thumb active" onclick="changeImage(this.src, this)">
+                    <img src="https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Product Page" class="thumb" onclick="changeImage(this.src, this)">
+                    <img src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Shopping Cart" class="thumb" onclick="changeImage(this.src, this)">
+                    <img src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Admin Dashboard" class="thumb" onclick="changeImage(this.src, this)">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Details -->
+    <section class="project-details">
+        <div class="container">
+            <div class="project-content">
+                <!-- Overview -->
+                <div class="project-section">
+                    <h2>Project Overview</h2>
+                    <p>
+                        This comprehensive e-commerce platform was built from the ground up using modern web technologies. 
+                        The project features a complete online shopping experience with user authentication, product catalog, 
+                        shopping cart functionality, and secure payment processing.
+                    </p>
+                    <p>
+                        The platform includes both customer-facing features and a comprehensive admin dashboard for 
+                        managing products, orders, and customer data. Special attention was paid to security, 
+                        performance optimization, and responsive design.
+                    </p>
+                </div>
+
+                <!-- Technologies Used -->
+                <div class="project-section">
+                    <h2>Technologies Used</h2>
+                    <div class="tech-stack">
+                        <div class="tech-category">
+                            <h3>Frontend</h3>
+                            <div class="tech-tags">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript ES6+</span>
+                                <span class="tech-tag">Bootstrap</span>
+                            </div>
+                        </div>
+                        <div class="tech-category">
+                            <h3>Backend</h3>
+                            <div class="tech-tags">
+                                <span class="tech-tag">PHP 8.0</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">Apache</span>
+                            </div>
+                        </div>
+                        <div class="tech-category">
+                            <h3>Tools & Security</h3>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Git</span>
+                                <span class="tech-tag">SSL/TLS</span>
+                                <span class="tech-tag">Payment Gateway API</span>
+                                <span class="tech-tag">Email Integration</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Key Features -->
+                <div class="project-section">
+                    <h2>Key Features</h2>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <h3>🛒 Shopping Cart</h3>
+                            <p>Dynamic shopping cart with real-time updates, quantity management, and persistent storage.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3>👤 User Authentication</h3>
+                            <p>Secure user registration, login, and profile management with password encryption.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3>💳 Payment Integration</h3>
+                            <p>Secure payment processing with multiple payment methods and transaction tracking.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3>📱 Responsive Design</h3>
+                            <p>Mobile-first responsive design ensuring optimal experience across all devices.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3>🔍 Product Search</h3>
+                            <p>Advanced search and filtering functionality with category-based navigation.</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3>📊 Admin Dashboard</h3>
+                            <p>Comprehensive admin panel for managing products, orders, and customer data.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- My Role -->
+                <div class="project-section">
+                    <h2>My Role & Responsibilities</h2>
+                    <ul class="responsibilities-list">
+                        <li><strong>Full Stack Development:</strong> Designed and implemented both frontend and backend components</li>
+                        <li><strong>Database Design:</strong> Created normalized database schema with proper relationships</li>
+                        <li><strong>Security Implementation:</strong> Implemented secure authentication, data validation, and SQL injection prevention</li>
+                        <li><strong>Payment Integration:</strong> Integrated secure payment gateway with proper error handling</li>
+                        <li><strong>Testing & Debugging:</strong> Conducted thorough testing and resolved performance bottlenecks</li>
+                        <li><strong>Documentation:</strong> Created comprehensive documentation for future maintenance</li>
+                    </ul>
+                </div>
+
+                <!-- Challenges & Solutions -->
+                <div class="project-section">
+                    <h2>Challenges & Solutions</h2>
+                    <div class="challenge-item">
+                        <h3>Challenge: Security Concerns</h3>
+                        <p><strong>Solution:</strong> Implemented comprehensive security measures including input validation, 
+                        SQL injection prevention, XSS protection, and secure session management. Used prepared statements 
+                        and encrypted sensitive data.</p>
+                    </div>
+                    <div class="challenge-item">
+                        <h3>Challenge: Performance Optimization</h3>
+                        <p><strong>Solution:</strong> Optimized database queries, implemented caching mechanisms, 
+                        compressed images, and minified CSS/JavaScript files. Used lazy loading for product images.</p>
+                    </div>
+                    <div class="challenge-item">
+                        <h3>Challenge: Payment Gateway Integration</h3>
+                        <p><strong>Solution:</strong> Thoroughly studied API documentation, implemented proper error handling, 
+                        and created a robust transaction logging system for debugging and reconciliation.</p>
+                    </div>
+                </div>
+
+                <!-- Project Links -->
+                <div class="project-section">
+                    <h2>Project Links</h2>
+                    <div class="project-links">
+                        <a href="https://github.com" target="_blank" class="btn btn-primary">
+                            <img src="../icons/github.svg" alt="GitHub">
+                            View Source Code
+                        </a>
+                        <a href="https://demo-ecommerce.com" target="_blank" class="btn btn-secondary">
+                            <img src="../icons/external-link.svg" alt="Live Demo">
+                            Live Demo
+                        </a>
+                        <a href="assets/project-documentation.pdf" target="_blank" class="btn btn-outline">
+                            <img src="../icons/document.svg" alt="Documentation">
+                            Documentation
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mohd Meraaz</h3>
+                    <p>Software Developer & Cybersecurity Enthusiast</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../index.html#projects">Projects</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/MdMeraaz08/" target="_blank" aria-label="GitHub">
+                            <img src="../icons/github.svg" alt="GitHub">
+                        </a>
+                       <a href="https://www.linkedin.com/in/mohdmeraaz08" target="_blank" aria-label="LinkedIn">
+                            <img src="../icons/linkedin.svg" alt="LinkedIn">
+                        </a>
+                        <a href="https://x.com/MohdMeraaz08" target="_blank" aria-label="Twitter">
+                            <img src="../icons/twitter.svg" alt="Twitter">
+                        </a>
+                        <a href="mailto:meraaz0809@gmail.com" aria-label="Email">
+                            <img src="../icons/email.svg" alt="Email">
+
+                        </a>
+
+                        <a href="https://www.instagram.com/mohdmeraaz08/" target="_blank" aria-label="Instagram">
+                            <img src="../icons/instagram.svg" alt="Instagram">
+                        </a>
+
+                        <a href="https://buymeacoffee.com/mohdmeraaz" target="_blank" aria-label="Buy Me a Coffee">
+                            <img src="../icons/buymeacoffee.svg" alt="Buy Me a Coffee">
+                        </a>
+                    </div>  
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2022 Mohd Meraaz. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <span>↑</span>
+    </button>
+
+    <script src="../js/script.js"></script>
+    <script>
+        // Project Gallery Functionality
+        function changeImage(src, element) {
+            // Update main image
+            document.getElementById('mainImg').src = src.replace('w=200', 'w=800');
+            
+            // Update active thumbnail
+            document.querySelectorAll('.thumb').forEach(thumb => thumb.classList.remove('active'));
+            element.classList.add('active');
+        }
+    </script>
+</body>
+</html>

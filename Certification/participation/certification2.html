@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Innovate Hackathon 2023 - John Doe</title>
+    <meta name="description" content="Tech Innovate Hackathon 2023 participation certificate details">
+     <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/svg+xml" href="../icons/favicon.svg">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">John Doe</a>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#certifications" class="nav-link active">Certifications</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <span class="sun-icon">☀️</span>
+                    <span class="moon-icon">🌙</span>
+                </button>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Certification Header -->
+    <section class="cert-header">
+        <div class="container">
+            <div class="cert-header-content">
+                <div class="cert-breadcrumb">
+                    <a href="../index.html#certifications">Certifications</a> / <span>Tech Innovate Hackathon 2023</span>
+                </div>
+                <h1 class="cert-title">Tech Innovate Hackathon 2023</h1>
+                <p class="cert-subtitle">48-Hour Innovation Challenge</p>
+                <div class="cert-meta">
+                    <span class="cert-type">Certificate of Participation</span>
+                    <span class="cert-date">June 15-17, 2023</span>
+                    <span class="cert-platform">TechCorp</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Display -->
+    <section class="cert-display">
+        <div class="container">
+            <div class="cert-image-container">
+                <img src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Tech Innovate Hackathon 2023 Certificate" class="cert-full-image">
+                <div class="cert-actions">
+                    <a href="https://hackerearth.com/challenges/hackathon/tech-innovate-2023/" target="_blank" class="btn btn-primary">
+                        <img src="../icons/external-link.svg" alt="View Event">
+                        View Event Details
+                    </a>
+                    <button class="btn btn-secondary" onclick="downloadCertificate()">
+                        <img src="../icons/download.svg" alt="Download">
+                        Download
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Details -->
+    <section class="cert-details">
+        <div class="container">
+            <div class="cert-content">
+                <!-- Event Overview -->
+                <div class="cert-section">
+                    <h2>Event Overview</h2>
+                    <p>
+                        Tech Innovate Hackathon 2023 was a 48-hour intensive coding competition that brought together 
+                        over 500 developers, designers, and entrepreneurs from around the world. The theme focused on 
+                        "Technology for Social Good" with challenges in healthcare, education, and environmental sustainability.
+                    </p>
+                    <p>
+                        Participants worked in teams of 2-4 members to develop innovative solutions using cutting-edge 
+                        technologies. The event featured mentorship sessions, technical workshops, and networking opportunities 
+                        with industry experts.
+                    </p>
+                </div>
+
+                <!-- Event Details -->
+                <div class="cert-section">
+                    <h2>Event Details</h2>
+                    <div class="event-info-grid">
+                        <div class="info-item">
+                            <h4>📅 Duration</h4>
+                            <p>48 Hours (June 15-17, 2023)</p>
+                        </div>
+                        <div class="info-item">
+                            <h4>📍 Location</h4>
+                            <p>TechCorp Innovation Center, San Francisco</p>
+                        </div>
+                        <div class="info-item">
+                            <h4>👥 Participants</h4>
+                            <p>500+ developers from 25+ countries</p>
+                        </div>
+                        <div class="info-item">
+                            <h4>🏆 Prize Pool</h4>
+                            <p>$50,000 total prizes</p>
+                        </div>
+                        <div class="info-item">
+                            <h4>🎯 Theme</h4>
+                            <p>Technology for Social Good</p>
+                        </div>
+                        <div class="info-item">
+                            <h4>👨‍💼 My Role</h4>
+                            <p>Full Stack Developer & Team Lead</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- My Project -->
+                <div class="cert-section">
+                    <h2>Our Project: EcoTracker</h2>
+                    <div class="project-summary">
+                        <h4>Problem Statement:</h4>
+                        <p>How might we help individuals and communities track and reduce their carbon footprint in an engaging and actionable way?</p>
+                        
+                        <h4>Our Solution:</h4>
+                        <p>EcoTracker - A mobile-first web application that gamifies environmental conservation by tracking daily activities, calculating carbon footprint, and providing personalized recommendations for sustainable living.</p>
+                        
+                        <h4>Key Features:</h4>
+                        <ul>
+                            <li>Real-time carbon footprint calculation</li>
+                            <li>Community challenges and leaderboards</li>
+                            <li>AI-powered sustainability recommendations</li>
+                            <li>Integration with IoT devices for automatic tracking</li>
+                            <li>Social sharing and impact visualization</li>
+                        </ul>
+                        
+                        <h4>Technology Stack:</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                        
+                        <h4>Achievement:</h4>
+                        <p><strong>3rd Place</strong> in the Environmental Sustainability category</p>
+                    </div>
+                </div>
+
+                <!-- Skills Gained -->
+                <div class="cert-section">
+                    <h2>Skills & Experience Gained</h2>
+                    <div class="skills-gained">
+                        <div class="skill-category">
+                            <h4>Technical Skills</h4>
+                            <ul>
+                                <li>Rapid prototyping and MVP development</li>
+                                <li>API integration and real-time data processing</li>
+                                <li>Machine learning model implementation</li>
+                                <li>Mobile-responsive design principles</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Soft Skills</h4>
+                            <ul>
+                                <li>Team leadership under pressure</li>
+                                <li>Time management and prioritization</li>
+                                <li>Pitch presentation and storytelling</li>
+                                <li>Cross-functional collaboration</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Innovation & Problem Solving</h4>
+                            <ul>
+                                <li>Design thinking methodology</li>
+                                <li>User-centered design approach</li>
+                                <li>Creative problem solving under constraints</li>
+                                <li>Market validation and user feedback integration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team & Networking -->
+                <div class="cert-section">
+                    <h2>Team & Networking</h2>
+                    <div class="team-info">
+                        <h4>Team Members:</h4>
+                        <div class="team-members">
+                            <div class="member">
+                                <strong>John Doe</strong> - Full Stack Developer & Team Lead
+                            </div>
+                            <div class="member">
+                                <strong>Sarah Johnson</strong> - UI/UX Designer
+                            </div>
+                            <div class="member">
+                                <strong>Mike Chen</strong> - Data Scientist
+                            </div>
+                            <div class="member">
+                                <strong>Lisa Rodriguez</strong> - Business Strategy
+                            </div>
+                        </div>
+                        
+                        <h4>Mentors Met:</h4>
+                        <ul>
+                            <li>Alex Turner - Senior Software Architect at Google</li>
+                            <li>Dr. Maria Santos - Environmental Tech Researcher</li>
+                            <li>David Kim - Startup Founder & VC Partner</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Gallery -->
+    <section class="event-gallery">
+        <div class="container">
+            <h2>Event Photos</h2>
+            <p>Memories from the 48-hour innovation journey</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openLightbox('https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=800')">
+                    <img src="https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Team brainstorming session">
+                    <div class="gallery-overlay">
+                        <span>Team Brainstorming</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" onclick="openLightbox('https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress&cs=tinysrgb&w=800')">
+                    <img src="https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Coding session">
+                    <div class="gallery-overlay">
+                        <span>Intense Coding Session</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" onclick="openLightbox('https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800')">
+                    <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Mentor session">
+                    <div class="gallery-overlay">
+                        <span>Mentor Guidance</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" onclick="openLightbox('https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800')">
+                    <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Final presentation">
+                    <div class="gallery-overlay">
+                        <span>Final Presentation</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" onclick="openLightbox('https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=800')">
+                    <img src="https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Award ceremony">
+                    <div class="gallery-overlay">
+                        <span>Award Ceremony</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" onclick="openLightbox('https://images.pexels.com/photos/3182792/pexels-photo-3182792.jpeg?auto=compress&cs=tinysrgb&w=800')">
+                    <img src="https://images.pexels.com/photos/3182792/pexels-photo-3182792.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Team celebration">
+                    <div class="gallery-overlay">
+                        <span>Team Celebration</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+            <img src="" alt="Event photo" id="lightboxImg">
+            <div class="lightbox-nav">
+                <button class="nav-btn prev" onclick="previousImage()">‹</button>
+                <button class="nav-btn next" onclick="nextImage()">›</button>
+            </div>
+        </div>
+    </div>
+
+   
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Mohd Meraaz</h3>
+                    <p>Software Developer & Cybersecurity Enthusiast</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../index.html#projects">Projects</a></li>
+                        <li><a href="../index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                   <!-- Social Links -->
+                    <div class="social-links">
+                        <a href="https://github.com/MdMeraaz08/" target="_blank" aria-label="GitHub">
+                            <img src="../icons/github.svg" alt="GitHub">
+                        </a>
+                       <a href="https://www.linkedin.com/in/mohdmeraaz08" target="_blank" aria-label="LinkedIn">
+                            <img src="../icons/linkedin.svg" alt="LinkedIn">
+                        </a>
+                        <a href="https://x.com/MohdMeraaz08" target="_blank" aria-label="Twitter">
+                            <img src="../icons/twitter.svg" alt="Twitter">
+                        </a>
+                        <a href="mailto:meraaz0809@gmail.com" aria-label="Email">
+                            <img src="../icons/email.svg" alt="Email">
+
+                        </a>
+
+                        <a href="https://www.instagram.com/mohdmeraaz08/" target="_blank" aria-label="Instagram">
+                            <img src="../icons/instagram.svg" alt="Instagram">
+                        </a>
+
+                        <a href="https://buymeacoffee.com/mohdmeraaz" target="_blank" aria-label="Buy Me a Coffee">
+                            <img src="../icons/buymeacoffee.svg" alt="Buy Me a Coffee">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2022 Mohd Meraaz. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <span>↑</span>
+    </button>
+
+    <script src="../js/script.js"></script>
+    <script>
+        // Gallery images array for navigation
+        const galleryImages = [
+            'https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=800',
+            'https://images.pexels.com/photos/3182773/pexels-photo-3182773.jpeg?auto=compress&cs=tinysrgb&w=800',
+            'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800',
+            'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800',
+            'https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&w=800',
+            'https://images.pexels.com/photos/3182792/pexels-photo-3182792.jpeg?auto=compress&cs=tinysrgb&w=800'
+        ];
+        
+        let currentImageIndex = 0;
+
+        // Open lightbox with specific image
+        function openLightbox(imageSrc) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightboxImg');
+            
+            currentImageIndex = galleryImages.indexOf(imageSrc);
+            lightboxImg.src = imageSrc;
+            lightbox.style.display = 'flex';
+            document.body.style.overflow = 'hidden'; // Prevent body scroll
+        }
+
+        // Close lightbox
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Restore body scroll
+        }
+
+        // Navigate to previous image
+        function previousImage() {
+            currentImageIndex = (currentImageIndex - 1 + galleryImages.length) % galleryImages.length;
+            document.getElementById('lightboxImg').src = galleryImages[currentImageIndex];
+        }
+
+        // Navigate to next image
+        function nextImage() {
+            currentImageIndex = (currentImageIndex + 1) % galleryImages.length;
+            document.getElementById('lightboxImg').src = galleryImages[currentImageIndex];
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            const lightbox = document.getElementById('lightbox');
+            if (lightbox.style.display === 'flex') {
+                if (e.key === 'ArrowLeft') previousImage();
+                if (e.key === 'ArrowRight') nextImage();
+                if (e.key === 'Escape') closeLightbox();
+            }
+        });
+
+        // Close lightbox when clicking outside the image
+        document.getElementById('lightbox').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeLightbox();
+            }
+        });
+
+        // Download certificate functionality
+        function downloadCertificate() {
+            alert('Certificate download functionality would be implemented here.');
+        }
+    </script>
+</body>
+</html>
